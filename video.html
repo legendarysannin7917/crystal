@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Crystal - Videos</title>		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/logo.png">
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	</head>
+	<body>
+		<header>
+			<div name="logoarea">
+				<a href="index.html"><img name="headerlogo" src="img/logo.png" alt="logo"/></a>
+				<h1 name="logoname">Crystal</h1>
+			</div>
+			<div name="divlistpage">
+				<ul name="ullistpage">
+					<li><a href="index.html" name="homeicon"><img name="homeicon" src="img/home icon.png" alt="logo"/>Home</a></li>
+					<li><a href="picture.html" name="photoicon"><img name="photoicon" src="img/photo icon.png" alt="logo"/>Picture</a></li>					
+					<li><a href="https://www.facebook.com/crystalkate.caballero.37" name="facebookicon"><img name="facebookicon" src="img/facebook icon.png" alt="logo"/>Facebook</a></li>
+					<li><a href="#" name="twittericon"><img name="twittericon" src="img/twitter icon.png" alt="logo"/>Twitter</a></li>
+					<li><a href="#" name="instagramicon"><img name="instagramicon" src="img/instagram icon.png" alt="logo"/>Instagram</a></li>
+				</ul>
+			</div>	
+		</header>
+		<div name="container">
+			<h1 name="foldertype">Videos</h1>
+			<div name="listvideo">
+				<div name="videos">
+					<div name="feature-img">
+						<img src="img/videologo.png" width="100%">
+						<img src="img/play.png" name="playbtn" onclick="playVideo('uploads/Franco hook wtf 1.mp4')">
+					</div>
+					<p name="title">Franco hook wtf 1.</p>
+				</div>
+				<div name="videos">
+					<div name="feature-img">
+						<img src="img/videologo.png" width="100%">
+						<img src="img/play.png" name="playbtn" onclick="playVideo('uploads/Franco hook wtf 2.mp4')">
+					</div>
+					<p name="title">Franco hook wtf 2.</p>
+				</div>
+			</div>
+		</div>
+		<div name="video-player" id="videoPlayer">
+			<video width="100%" controls autoplay id="playingVideo">
+				<source src="uploads/Dota 2.mp4" type="video/mp4"/>
+			</video>
+			<img src="img/close.png" name="closebtn" onclick="stopVideo()">
+		</div>
+		
+		<script>
+			var videoPlayer = document.getElementById("videoPlayer");
+			var playingVideo = document.getElementById("playingVideo");
+			
+			function stopVideo(){
+				videoPlayer.style.display = "none";
+				playingVideo.pause();
+			}
+			
+			function playVideo(file){
+				playingVideo.src = file;
+				videoPlayer.style.display = "block";
+			}			
+		</script>
+	</body>
+</html>

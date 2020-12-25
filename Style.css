@@ -1,0 +1,523 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background: #FC97AF;
+}
+
+header
+{
+	width: 100%;
+	background-color: #ff69ca;
+	height: 85px;
+}
+
+div[name=logoarea]
+{
+	float: left;
+	width: 20%;
+}
+
+h1[name=logoname]
+{
+	font-family: "Lucida Handwriting", Cursive;	
+	color: #ffffff;
+	padding-top: 15px;
+}
+
+img[name=headerlogo]
+{
+	margin-top: 2px;
+	float: left;
+	width: 80px;
+	height: auto;
+	margin-left: 10px;
+	overflow: hidden;
+}
+
+div[name=divlistpage]
+{
+	float: right;
+	width: 60%;
+}
+
+ul[name=ullistpage] li
+{
+	float: right;
+	list-style: none;
+	display: inline-block;
+	line-height: 60px;
+}
+
+ul[name=ullistpage] li a{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul[name=ullistpage] li a[name=facebookicon]{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	bottom: 16px;
+}
+
+ul[name=ullistpage] img[name=facebookicon]{
+	position: relative;
+	width: 30%;
+	margin-top: 20px;
+	margin-right: 10px;
+	top: 16px;
+}
+
+ul[name=ullistpage] li a[name=twittericon]{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	bottom: 8px;
+}
+
+ul[name=ullistpage] img[name=twittericon]{
+	position: relative;
+	width: 30%;
+	margin-top: 20px;
+	margin-right: 10px;
+	top: 11px;
+}
+
+ul[name=ullistpage] li a[name=instagramicon]{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	bottom: 15px;
+}
+
+ul[name=ullistpage] img[name=instagramicon]{
+	position: relative;
+	width: 30%;
+	margin-top: 20px;
+	margin-right: 10px;
+	top: 14px;
+}
+
+ul[name=ullistpage] li a[name=videoicon]{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	bottom: 7px;
+}
+
+ul[name=ullistpage] img[name=videoicon]{
+	position: relative;
+	width: 30%;
+	margin-top: 20px;
+	margin-right: 10px;
+	top: 13px;
+}
+
+ul[name=ullistpage] li a[name=photoicon]{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	bottom: 7px;
+}
+
+ul[name=ullistpage] img[name=photoicon]{
+	position: relative;
+	width: 30%;
+	margin-top: 20px;
+	margin-right: 10px;
+	top: 13px;
+}
+
+ul[name=ullistpage] li a[name=homeicon]{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	bottom: 5px;
+}
+
+ul[name=ullistpage] img[name=homeicon]{
+	position: relative;
+	width: 30%;
+	margin-top: 20px;
+	margin-right: 10px;
+	top: 9px;
+}
+
+h1[name=foldertype]
+{
+	padding: 20px 0;
+	color: #ffffff;
+	font-size: 44px;
+	text-align: center;
+}
+
+div[name="listvideo"]
+{
+	flex-direction: row;
+	margin-left: 10px;
+}
+
+div[name="feature-img"]
+{
+	display: flex;
+	width: 25%;
+	float: left;
+	border-radius: 6px;
+	overflow: hidden;
+}
+div[name="videos"]
+{
+	float: left;
+	width: 50%;
+	display: flex;
+	background: #efefef;
+	align-items: center;
+	border-radius: 6px;
+	overflow: hidden;
+	width: 500px;
+	margin-top: 10px;
+	margin-left: 115px;
+}
+
+p[name="title"]
+{
+	margin-left: 10px;
+	color: #262526;
+	line-height: 22px;
+	font-size: 20px;
+	font-family: "Lucida Handwriting", Cursive;
+}
+
+img[name="playbtn"]
+{
+	width: 35px;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 45px;
+	cursor: pointer;
+}
+
+div[name="video-player"]
+{
+	width: 80%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+video:focus
+{
+	outline: none;
+}
+
+img[name="closebtn"]
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 30px;
+	cursor: pointer;
+}
+
+div[name=picturediv]
+{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+div[name=listpicture]
+{
+	flex-direction: row;
+}
+
+img[name=picture]
+{
+	display: flex;
+	width: 15%;
+	float: left;
+	border-radius: 6px;
+	overflow: hidden;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 330px){
+div[name=logoarea]
+{
+	float: left;
+	width: 100%;
+}
+div[name=divlistpage]
+{
+	float: right;
+	width: 100%;
+}
+
+ul[name=ullistpage] li
+{
+	line-height: 5px;
+}
+
+ul[name=ullistpage] li a[name=photoicon]{
+	font-size: 10px;
+	top: -15px;
+}
+
+ul[name=ullistpage] img[name=photoicon]{
+	width: 20%;
+	top: 5px;
+}
+ul[name=ullistpage] li a[name=videoicon]{
+	font-size: 10px;
+	top: -15px;
+}
+
+ul[name=ullistpage] img[name=videoicon]{
+	width: 20%;
+	top: 7px;
+}
+ul[name=ullistpage] li a[name=facebookicon]{
+	font-size: 10px;
+}
+
+ul[name=ullistpage] img[name=facebookicon]{
+	width: 20%;
+	top: 8px;
+}
+ul[name=ullistpage] li a[name=twittericon]{
+	font-size: 10px;
+	top: -20px;
+}
+
+ul[name=ullistpage] img[name=twittericon]{
+	width: 20%;
+	top: 5px;
+}
+
+ul[name=ullistpage] li a[name=instagramicon]{
+	font-size: 10px;
+	top: -23px;
+}
+
+ul[name=ullistpage] img[name=instagramicon]{
+	width: 20%;
+	top: 7px;
+}
+ul[name=ullistpage] li a[name=homeicon]{
+	font-size: 10px;
+	top: -11px;
+}
+div[name=picturediv]
+{
+	margin-left: 60px;
+}
+div[name="videos"]
+{
+	margin-left: 5px;
+}
+div[name="videos"]
+{
+	width: 300px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+img[name="playbtn"]
+{
+	margin-top: 12px;
+	margin-left: 20px;
+	cursor: pointer;
+}	
+}
+
+@media only screen and (min-width: 667px){
+div[name=logoarea]
+{
+	width: 40%;
+}
+
+div[name=divlistpage]
+{
+	position: relative;
+	width: 60%;
+	top: -10px;
+	height: 95px;
+}
+
+ul[name=ullistpage] li
+{
+	line-height: 5px;
+}
+
+ul[name=ullistpage] li a[name=photoicon]{
+	font-size: 15px;
+	top: -12px;
+}
+
+ul[name=ullistpage] img[name=photoicon]{
+	width: 25%;
+	top: 10px;
+}
+ul[name=ullistpage] li a[name=videoicon]{
+	font-size: 15px;
+	top: -12px;
+}
+
+ul[name=ullistpage] img[name=videoicon]{
+	width: 25%;
+	top: 10px;
+}
+ul[name=ullistpage] li a[name=facebookicon]{
+	font-size: 15px;
+}
+
+ul[name=ullistpage] img[name=facebookicon]{
+	width: 25%;
+	top: 12px;
+}
+ul[name=ullistpage] li a[name=twittericon]{
+	font-size: 15px;
+	top: -25px;
+}
+
+ul[name=ullistpage] img[name=twittericon]{
+	width: 25%;
+}
+
+ul[name=ullistpage] li a[name=instagramicon]{
+	font-size: 15px;
+	top: -33px;
+}
+
+ul[name=ullistpage] img[name=instagramicon]{
+	width: 25%;
+}
+ul[name=ullistpage] li a[name=homeicon]{
+	font-size: 15px;
+	top: -11px;
+}
+
+ul[name=ullistpage] img[name=homeicon]{
+	width: 25%;
+}
+div[name=picturediv]
+{
+	margin-left: 60px;
+}
+
+div[name="videos"]
+{
+	width: 300px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+}
+
+@media only screen and (min-width: 768px){
+div[name="videos"]
+{
+	margin-left: 50px;
+}	
+}
+
+@media only screen and (min-width: 1000px){
+div[name=logoarea]
+{
+	width: 30%;
+}
+
+div[name=divlistpage]
+{
+	width: 70%;
+}
+
+ul[name=ullistpage] li a[name=photoicon]{
+	top: 1px;
+}
+
+ul[name=ullistpage] li a[name=videoicon]{
+	top: 1px;
+}
+
+ul[name=ullistpage] li a[name=facebookicon]{
+	top: -5px;
+}
+
+ul[name=ullistpage] li a[name=twittericon]{
+	top: -1px;
+}
+ul[name=ullistpage] img[name=twittericon]{
+	top: 11px;
+}
+
+ul[name=ullistpage] li a[name=instagramicon]{
+	top: -7px;
+}
+
+ul[name=ullistpage] img[name=instagramicon]{
+	top: 13px;
+}
+
+ul[name=ullistpage] li a[name=homeicon]{
+	top: 2px;
+}
+div[name=picturediv]
+{
+	margin-left: 120px;
+}
+
+div[name="videos"]
+{
+	width: 450px;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+img[name="playbtn"]
+{
+	margin-top: 25px;
+	margin-left: 40px;
+	cursor: pointer;
+}	
+}
+
+@media only screen and (min-width: 1200px){
+div[name=picturediv]
+{
+	margin-left: 160px;
+}
+div[name="videos"]
+{
+	margin-left: 90px;
+}
+}
+
+@media only screen and (min-width: 1366px){
+div[name=picturediv]
+{
+	margin-left: 45px;
+}
+div[name="videos"]
+{
+	margin-left: 150px;
+}
